@@ -15,6 +15,7 @@ require("packer").startup({
     use 'alvan/vim-closetag' -- <*></*>
     use 'windwp/nvim-autopairs' -- '"({[
     use 'terryma/vim-multiple-cursors' -- v C-n
+		use 'voldikss/vim-floaterm'
 
 -- unicode
     use 'vim-skk/eskk.vim' -- i C-j 
@@ -34,6 +35,8 @@ require("packer").startup({
       requires = { {'nvim-lua/plenary.nvim'} }
     }
 
+-- python pep8
+		use 'tell-k/vim-autopep8'
 -- debugging 
 -- use 'mfussenegger/nvim-dap'
 

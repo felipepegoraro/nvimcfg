@@ -2,10 +2,6 @@
 -- FUNCTIONS TO BEST STARTUP_TIME
 -- ================================
 -- --------------------------------
-function load_theme()
-  vim.cmd [[colorscheme material]] 
-end
--- --------------------------------
 function load_lsp()
   vim.cmd [[
     lua require('lsp_cmp')
@@ -24,8 +20,7 @@ end
 vim.cmd [[
   augroup user_cmds
   autocmd!
-  autocmd VimEnter * lua vim.defer_fn(load_plugins, 2)
-  autocmd VimEnter * lua vim.defer_fn(load_theme, 1)
+  autocmd VimEnter * lua vim.defer_fn(load_plugins, 3)
   autocmd VimEnter * lua vim.defer_fn(load_lsp, 7)
   augroup END
 ]]

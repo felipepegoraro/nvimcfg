@@ -43,7 +43,7 @@ map('n', '<leader>d', ':tabclose <CR>', slc)
 
 -- about speed 
 map('n', '<C-c>', ':Commentary <CR>', slc) --+visual mode: gcc
-map('n', '<C-i>', ':HopLine <CR>', slc)
+map('n', '<M-i>', ':HopLine <CR>', slc)
 -- about speed 
 
 -- -- -- basics =====================================
@@ -70,8 +70,8 @@ map('n', 'tn', ":lua require('functions').edit_nvim()<CR>", slc)
 -- Telescope ========================================
 
 -- file_browser functions ===========================
-map('n', '<C-m>', ":lua require('functions').open_right()<CR>", slc)  -- Lexplore
-map('n', '<M-m>', ":lua require('functions').open_tab()<CR>", slc)  -- Texplore
+map('n', '<M-m>', ":lua require('functions').open_right()<CR>", slc)  -- Lexplore
+map('n', '<M-s>', ":lua require('functions').open_tab()<CR>", slc)  -- Texplore
 map('n', '<leader><leader>', ":lua require('functions').open_left()<CR>", slc)
 -- file_browser functions ===========================
 
@@ -79,6 +79,8 @@ map('n', '<leader><leader>', ":lua require('functions').open_left()<CR>", slc)
 vim.cmd [[ set matchpairs+=<:> ]] --%
 
 -- BUILD / RUN ======================================
-map('n', '<M-q>', ":lua require('functions').build_texcpp()<CR>", slc)
+map('n', '<M-q>', ":lua require('functions').build_all()<CR>", slc)
+-- map('n', '<M-w>', ":FloatermNew --autoclose=0 gcc % -o %< && ./%<<CR>",slc)
+map('n', '<M-w>', ":FloatermNew<CR>", slc)
 -- BUILD / RUN ======================================
 

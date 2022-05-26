@@ -1,7 +1,7 @@
 -- ===================================
---| Author: FelipeFSP
+--| Author: Felipe Pegoraro
 --| License: unlicense
---| https://github.com/FelipeFSP/nvim
+--| https://github.com/felipepegoraro/
 -- ===================================
 
 -- packer: plugin manager
@@ -16,3 +16,4 @@ require('functions')
 -- config: 2
 require('customs.startup_func')
 require('customs.anothers')
+vim.cmd [[ colorscheme material ]] 

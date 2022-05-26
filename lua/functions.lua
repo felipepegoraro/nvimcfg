@@ -42,14 +42,16 @@ end
 -- =======================================
 
 -- =======================================
-function M.build_texcpp()
+function M.build_all()
   vim.cmd [[
   if &filetype == 'tex'
     exec "! lualatex %"
-  elseif &filetype == 'c' 
-    exec "! gcc % -o %<"
-  else 
-    exec "echo '> not found.'"
+  elseif &filetype == 'python'
+		exec "Autopep8 | q"
+	elseif &filetype == "rmd"
+		exec "! Rscript -e \"rmarkdown::render('%')\""
+	else
+    exec "echo ' + not found.'"
   endif
   ]]
 end
