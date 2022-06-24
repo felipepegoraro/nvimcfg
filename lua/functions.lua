@@ -50,6 +50,8 @@ function M.build_all()
 		exec "Autopep8 | q"
 	elseif &filetype == "rmd"
 		exec "! Rscript -e \"rmarkdown::render('%')\""
+	elseif &filetype == "css"
+		exec "ColorToggle"
 	else
     exec "echo ' + not found.'"
   endif

@@ -25,6 +25,7 @@ require("packer").startup({
     use 'humanoid-colors/vim-humanoid-colorscheme'
     use 'marko-cerovac/material.nvim'
       vim.g.material_style = "deep ocean" 
+		use 'chrisbra/Colorizer' -- CSS color
 
 -- mod ~/.local/share/nvim/site/pack/packer/start/material.nvim/lua/material
 -- mod line: 148 

@@ -1,10 +1,10 @@
-### download
+### Install
 ```shell
-  [[ -d "${HOME}/.config/nvim/" ]] && mv ${HOME}/.config/nvim{,.bak} 
-  cd "${HOME}/.config/"
-  git clone https://github.com/FelipeFSP/nvimcfg nvim
+[[ -d "~/.config/nvim/" ]] && mv ~/.config/nvim{,.bak} 
+cd "~/.config/"
+git clone https://github.com/felipepegoraro/nvimcfg nvim
 ```
 ```shell 
-  nvim
+nvim
 ```
 
